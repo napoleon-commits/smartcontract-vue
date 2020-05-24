@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Smart Contract UI</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+</head>
+<body>
+    <div>
+        <h1>First Smart Contract</h1>
+        <h2 id="instructor"></h2>
+        <label for="name">Instructor Name: </label>
+        <input type="text" id="name">
+        <br>
+        <label for="age">Instructor Age: </label>
+        <input type="text" id="age">
+        <br>
+        <button>Update Instructor</button>
+    </div>
+    <script>
+        let web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+        console.log(web3.eth.accounts[0]);
+    </script>
+</body>
+</html>
