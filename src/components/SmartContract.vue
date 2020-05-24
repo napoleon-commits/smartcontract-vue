@@ -49,6 +49,10 @@ contract.methods.getCount().call(function(err, data){
     console.log(err);
     console.log("err");
   }
+});
+
+web3.eth.getBalance("0xA4C963C4b7171F11aE947183890128c68C04d621").then(function(balance){
+  console.log(`Balance of ${"0xA4C963C4b7171F11aE947183890128c68C04d621"}: ${balance}`);
 })
 
 export default {
